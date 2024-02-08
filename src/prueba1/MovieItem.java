@@ -1,4 +1,4 @@
-package prueba1;
+package javaapplication23;
 import java.util.Calendar;
 
 public abstract class MovieItem extends BlockBusterItem{
@@ -8,6 +8,7 @@ public abstract class MovieItem extends BlockBusterItem{
         estado="ESTRENO";
     }
     
+    @Override
     public String toString(){
         return super.toString()+"- Movie";
     }
@@ -24,8 +25,10 @@ public abstract class MovieItem extends BlockBusterItem{
     public boolean evaluarEstado(String estado){
         Calendar fechaActual=Calendar.getInstance();
         fechaActual.get(Calendar.MONTH);
-
-        if (fechaActual.equals(fechaAdicion.add(Calendar.MONTH, 5)) && estado.equalsIgnoreCase("ESTRENO")) {
+        Calendar fechaNoEstreno=fechaAdicion;
+        fechaNoEstreno.add(Calendar.MONTH, 5);
+               
+        if (fechaActual.after(fechaNoEstreno)) {
             estado = "NORMAL";
             return true;
         }
