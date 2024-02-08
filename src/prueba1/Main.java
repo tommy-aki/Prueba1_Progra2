@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package prueba1;
 
-/**
- *
- * @author USER
- */
 public class Main extends javax.swing.JFrame {
 
     /**
@@ -27,11 +19,11 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         salirBoton = new javax.swing.JButton();
-        botonUsuarios = new javax.swing.JButton();
-        botonReportes = new javax.swing.JButton();
-        botonEventos = new javax.swing.JButton();
+        botonBuscar = new javax.swing.JButton();
+        botonRentar = new javax.swing.JButton();
+        botonAgregar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        botonUsuarios1 = new javax.swing.JButton();
+        botonAuditar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -43,38 +35,38 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        botonUsuarios.setText("Buscar Item");
-        botonUsuarios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        botonUsuarios.addActionListener(new java.awt.event.ActionListener() {
+        botonBuscar.setText("Buscar Item");
+        botonBuscar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonUsuariosActionPerformed(evt);
+                botonBuscarActionPerformed(evt);
             }
         });
 
-        botonReportes.setText("Rentar");
-        botonReportes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        botonReportes.addActionListener(new java.awt.event.ActionListener() {
+        botonRentar.setText("Rentar");
+        botonRentar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonRentar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonReportesActionPerformed(evt);
+                botonRentarActionPerformed(evt);
             }
         });
 
-        botonEventos.setText("Agregar Item");
-        botonEventos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        botonEventos.addActionListener(new java.awt.event.ActionListener() {
+        botonAgregar.setText("Agregar Item");
+        botonAgregar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonEventosActionPerformed(evt);
+                botonAgregarActionPerformed(evt);
             }
         });
 
         jLabel2.setFont(new java.awt.Font("Monospaced", 1, 48)); // NOI18N
         jLabel2.setText("BlockBuster");
 
-        botonUsuarios1.setText("Buscar Item");
-        botonUsuarios1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        botonUsuarios1.addActionListener(new java.awt.event.ActionListener() {
+        botonAuditar.setText("Auditar Estado Movie");
+        botonAuditar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        botonAuditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonUsuarios1ActionPerformed(evt);
+                botonAuditarActionPerformed(evt);
             }
         });
 
@@ -92,12 +84,12 @@ public class Main extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(128, 128, 128)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botonEventos, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botonReportes, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botonAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonRentar, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(62, 62, 62)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botonUsuarios1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botonUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botonAuditar, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(116, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -107,12 +99,12 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(62, 62, 62)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonEventos, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botonUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botonAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(103, 103, 103)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonReportes, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botonUsuarios1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botonRentar, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonAuditar, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
                 .addComponent(salirBoton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -125,25 +117,29 @@ public class Main extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_salirBotonActionPerformed
 
-    private void botonUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonUsuariosActionPerformed
-        MenuUsuarios mu = new MenuUsuarios();
-        mu.setVisible(true);
+    private void botonBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonBuscarActionPerformed
+        BuscarItem bi = new BuscarItem();
+        bi.setVisible(true);
         dispose();
-    }//GEN-LAST:event_botonUsuariosActionPerformed
+    }//GEN-LAST:event_botonBuscarActionPerformed
 
-    private void botonReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonReportesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botonReportesActionPerformed
-
-    private void botonEventosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonEventosActionPerformed
-        MenuEventos me =new MenuEventos();
-        me.setVisible(true);
+    private void botonRentarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRentarActionPerformed
+        Rentar r = new Rentar();
+        r.setVisible(true);
         dispose();
-    }//GEN-LAST:event_botonEventosActionPerformed
+    }//GEN-LAST:event_botonRentarActionPerformed
 
-    private void botonUsuarios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonUsuarios1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botonUsuarios1ActionPerformed
+    private void botonAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAgregarActionPerformed
+        AgregarItem ai = new AgregarItem();
+        ai.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_botonAgregarActionPerformed
+
+    private void botonAuditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAuditarActionPerformed
+        AuditarMovieEstado ame = new AuditarMovieEstado();
+        ame.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_botonAuditarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -181,10 +177,10 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton botonEventos;
-    private javax.swing.JButton botonReportes;
-    private javax.swing.JButton botonUsuarios;
-    private javax.swing.JButton botonUsuarios1;
+    private javax.swing.JButton botonAgregar;
+    private javax.swing.JButton botonAuditar;
+    private javax.swing.JButton botonBuscar;
+    private javax.swing.JButton botonRentar;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JButton salirBoton;
     // End of variables declaration//GEN-END:variables
