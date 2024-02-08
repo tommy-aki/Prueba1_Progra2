@@ -4,17 +4,36 @@
  */
 package javaapplication23;
 
+import java.util.Calendar;
+
 /**
  *
  * @author Tommy Lee Pon
  */
-public class JavaApplication23 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class VideoGameItem extends BlockBusterItem{
+    private int code;
+    private String name;
+    private final double RENTA=30;
+    private Calendar fecha;
+    private String consola;
+    public static final String PLAYSTATION="playstation";
+    public static final String XBOX="xbox";
+    public static final String WII="wii";
+    
+    
+    public VideoGameItem(int codigo, String nombre, double renta, Calendar fecha, String consola){
+        super(codigo, nombre, fecha);
+        renta=RENTA;
+        this.consola=consola;
     }
     
+    @Override
+    public String toString(){
+        return super.toString() + consola + " Game";
+    }
+    
+    @Override
+    public double pagoRenta(int dias){
+        return dias*RENTA;
+    }
 }
