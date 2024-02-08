@@ -13,15 +13,22 @@ public abstract class MovieItem extends BlockBusterItem{
     }
     
     public double pagoRenta(int dias,String estado){
-        if(estado.equalsIgnoreCase(ESTRENO)&&dias>)
+        if(estado.equalsIgnoreCase("ESTRENO")&&dias>2){
+            return 50;
+        }else if(estado.equalsIgnoreCase("NORMAL")&&dias>5){
+            return 30;
+        }
+        return 0;
     }
     
-    public boolean evaluarEstado(){
-         fechaAdicion = getInstance();
+    public boolean evaluarEstado(String estado){
         Calendar fechaActual=Calendar.getInstance();
+        fechaActual.get(Calendar.MONTH);
 
-        if (mesesDiferencia >= 5 && estado.equals("ESTRENO")) {
+        if (fechaActual.equals(fechaAdicion.add(Calendar.MONTH, 5)) && estado.equalsIgnoreCase("ESTRENO")) {
             estado = "NORMAL";
+            return true;
         }
+        return false;
     }
 }

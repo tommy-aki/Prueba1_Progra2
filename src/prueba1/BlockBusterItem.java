@@ -2,10 +2,10 @@ package prueba1;
 import java.util.Calendar;
 
 public abstract class BlockBusterItem {
-    private int codigo;
-    private String nombre;
-    private double precioRenta;
-    private Calendar fechaAdicion;
+    protected int codigo;
+    protected String nombre;
+    protected double precioRenta;
+    protected Calendar fechaAdicion;
 
     public BlockBusterItem(int codigo,String nombre,double precioRenta) {
         this.codigo=codigo;
